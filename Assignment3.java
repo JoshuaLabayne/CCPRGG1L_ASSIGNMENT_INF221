@@ -19,7 +19,9 @@ public class App {
                     System.out.print("");
                 
                 else if (rows % 2 !=0)
-                    System.out.print(arrayName[rows][columns] );                            
+                    System.out.print(arrayName[rows][columns] );
+                
+            
         }
   
 
@@ -70,7 +72,7 @@ public class App {
             } 
          }
         
-         //Pattern #4
+        
          System.out.println(" ");
          System.out.println("4. PATTERN 4");
         
@@ -90,11 +92,29 @@ public class App {
                   
                   if (rows == 1|| rows == 3)
                      System.out.print(arrayName[rows][columns] );
+
                  }
             
             }
+
+         System.out.println(" ");
+         System.out.println("5. PATTERN 5");
+            
+         int i, j, row_sum = 0, sum;  
+            int[][] SumOfRowCols_arr = {{1, 1, 1}, {1, 1, 1}, {1, 1, 1}, {1, 1, 1}};       
+    
+            for(i = 0; i < SumOfRowCols_arr.length; i++){
+             sum = 0; 
+               
+              for(j = 0; j < SumOfRowCols_arr[0].length; j++) {
+    
+                    row_sum = row_sum + SumOfRowCols_arr[i][j];
+                }              
+            }    
+                System.out.println ("Sum : " + row_sum);
+    
     }
+
 }
-                     
-                 
+               
     
